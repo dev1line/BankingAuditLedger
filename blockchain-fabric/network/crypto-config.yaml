@@ -1,0 +1,16 @@
+# Banking Audit Ledger - Crypto Configuration
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: bankingaudit.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: BankingAudit
+    Domain: bankingaudit.com
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1
